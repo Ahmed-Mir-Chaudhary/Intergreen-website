@@ -609,131 +609,62 @@ html {
     margin-top: 20px; /* Adjust spacing as needed */
 }
 /* Responsive styles for tablets (max width: 768px) */
+/* Responsive styles for phones (max width: 480px) */
+/* Responsive styles for tablets (max width: 768px) */
 @media (max-width: 768px) {
-    /* Top black part adjustments */
     #sec-0 header.top .container {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center-align items */
+        flex-direction: row; /* Arrange items horizontally */
+        justify-content: space-between; /* Spread items evenly */
+        align-items: center; /* Vertically align items */
+        padding: 5px 10px; /* Adjust padding */
+        background-color: #101010; /* Ensure consistent background */
     }
 
     #sec-0 header.top p {
-        width: auto; /* Adjust width for readability */
-        font-size: 0.85rem; /* Slightly smaller font */
-        text-align: center;
+        font-size: 0.75rem; /* Slightly smaller font */
+        margin: 0; /* Remove default margins */
+        width: auto; /* Let the width adjust naturally */
+        text-align: left; /* Align text to the left */
     }
 
     #sec-0 header.top .social {
-        justify-content: center; /* Center social icons */
+        justify-content: flex-end; /* Align social icons to the right */
+        gap: 8px; /* Add spacing between icons */
     }
 
-    /* Main video section adjustments */
-    .background-video {
-        object-fit: cover; /* Ensure full coverage */
-        height: 100%; /* Keep the video height consistent */
-    }
-
-    /* Main heading and content */
-    #sec-0 article h1 {
-        font-size: 1.5rem; /* Adjust size slightly */
-    }
-
-    #sec-0 article h2 {
-        font-size: 1.8rem; /* Slightly larger for readability */
-        line-height: 1.3em;
-    }
-
-    #sec-0 article h2 span {
-        font-size: 2rem;
-    }
-
-    #sec-0 article p {
-        font-size: 1rem; /* Keep readable size */
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    #sec-0 article a {
-        font-size: 1rem;
-        padding: 10px 20px; /* Maintain button size */
+    #sec-0 header.top {
+        height: auto; /* Let the height adjust dynamically */
     }
 }
 
 /* Responsive styles for phones (max width: 480px) */
 @media (max-width: 480px) {
-    /* Top black part adjustments */
-    @media (max-width: 480px) {
-        #sec-0 header.top .container {
-            display: flex;
-            flex-direction: column; /* Stack elements vertically */
-            align-items: flex-end; /* Align all items to the right */
-            gap: 8px; /* Add some spacing between items */
-            text-align: right; /* Align text to the right */
-            padding: 10px 15px; /* Add padding for better spacing */
-            background-color: #101010; /* Ensure a sleek black background */
-        }
-    
-        #sec-0 header.top p {
-            font-size: 0.85rem; /* Maintain readability */
-            color: #ffffff; /* White text for better contrast */
-            margin: 0; /* Remove unnecessary margins */
-        }
-    
-        #sec-0 header.top p::before {
-            font-size: 1.2rem; /* Adjust icon size */
-            color: #FFD700; /* Add a golden touch for the icons */
-        }
-    
-        #sec-0 header.top .social {
-            display: flex;
-            flex-direction: column; /* Stack elements vertically */
-            align-items: flex-end; /* Align all items to the right */
-            gap: 10px; /* Add spacing between icons */
-            margin-top: 5px;
-        }
-    
-        #sec-0 header.top .social a {
-            font-size: 1.2rem; /* Slightly larger social icons */
-            color: #ffffff; /* White icons */
-            transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
-        }
-    
-        #sec-0 header.top .social a:hover {
-            transform: scale(1.2); /* Scale up on hover */
-            color: #FFD700; /* Golden color on hover for elegance */
-        }
+    #sec-0 header.top .container {
+        flex-direction: row; /* Stack items vertically */
+        align-items: left; /* Center all items */
+        gap: 5px; /* Add spacing between items */
+        padding: 5px 10px; /* Compact padding */
     }
 
-    /* Main video section adjustments */
-    .background-video {
-        height: 120vh; /* Reduce height slightly for smaller screens */
-        object-fit: cover; /* Keep the video properly scaled */
+    #sec-0 header.top p {
+        font-size: 0.7rem; /* Smaller font for readability */
+        text-align: left; /* Center-align text */
     }
 
-    /* Main heading and content */
-    #sec-0 article h1 {
-        font-size: 1.9rem;
+    #sec-0 header.top .social {
+        flex-direction: row; /* Arrange icons horizontally */
+        justify-content: right; /* Center align social icons */
+        gap: 8px; /* Add space between icons */
     }
 
-    #sec-0 article h2 {
-        font-size: 2.5rem;
-        line-height: 1.2em;
-    }
-
-    #sec-0 article h2 span {
-        font-size: 2.5rem;
-    }
-
-    #sec-0 article p {
-        font-size: 1.2rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    #sec-0 article a {
-        font-size: 0.9rem;
-        padding: 8px 15px; /* Reduce padding for smaller buttons */
+    #sec-0 header.top {
+        height: auto; /* Automatically adjust height */
+        padding-bottom: 5px; /* Add some padding for breathing space */
     }
 }
+
+
+
 
 /* SECTION ONE */
 #sec-1 {
